@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import styled from "styled-components"
 import Product from "./Product";
 import axios from "axios"
+import { publicRequest } from '../requestMethods';
 
 const Container = styled.div`
 display: flex;
