@@ -1,11 +1,10 @@
 {
   "name": "ecommerceapi",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "start:nodemon",
-    "heroku-postbuild":"NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "",
   "license": "ISC",
@@ -18,5 +17,15 @@
     "mongoose": "^6.1.9",
     "nodemon": "^2.0.15",
     "stripe": "^8.202.0"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Trakkyx/onecandles.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Trakkyx/onecandles/issues"
+  },
+  "homepage": "https://github.com/Trakkyx/onecandles#readme",
+  "description": ""
 }
