@@ -16,8 +16,8 @@ const Products = ({cat,filters,sort}) => {
     useEffect(() =>{
         const getProducts = async() =>{
           try{
-            const res = await axios.get(cat ? `http://localhost:5000/api/product?category=${cat}` 
-            : "http://localhost:5000/api/product"
+            const res = await publicRequest.get(cat ? `/api/product?category=${cat}` 
+            : "/api/product"
             );
             setProducts(res.data);
           }catch(err){}

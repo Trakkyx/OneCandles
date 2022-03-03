@@ -143,7 +143,7 @@ const dispatch = useDispatch();
 useEffect(()=>{
 const getProduct = async ()=>{
 try{
-   const res = await publicRequest.get("/product/find/"+id)
+   const res = await publicRequest.get("/api/product/find/"+id)
    setProduct(res.data);
 }catch{}
 };
