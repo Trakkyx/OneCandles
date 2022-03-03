@@ -1,4 +1,6 @@
+//initialise token plugin
 const jwt = require("jsonwebtoken");
+
 
 const verifyToken = (req,res,next)=>{
     const authHeader = req.headers["authorization"];;
@@ -13,9 +15,10 @@ const verifyToken = (req,res,next)=>{
     }else{
         return res.status(401).json("You are not authenticated!");
         console.log(authHeader);
-         console.log(user);
+        console.log(user);
     }
 }
+
 
 const verifyTokenAndAuthorization=(req,res,next)=>{
     verifyToken(req,res,()=>{

@@ -17,7 +17,7 @@ router.post("/", verifyToken, async (req,res)=>{
     }
 })
 //UPDATE
-
+/*
 router.put("/:id",verifyTokenAndAuthorization, async (req,res)=>{
     if(req.body.password){
     req.body.password=CryptoJS.AES.encrypt(req.body.password, process.env.PASS_SEC).toString();  
@@ -41,7 +41,7 @@ try{
    res.status(500).json(err) 
 }
 });
-
+*/
 //GET PRODUCT
 router.get("/find/:id", async (req,res)=>{
     try{
@@ -53,7 +53,7 @@ router.get("/find/:id", async (req,res)=>{
     }
     });
 
-//GET ALL USERS
+//GET ALL PRODUCTS
 router.get("/",  async (req,res)=>{
     const qNew = req.query.new;
     const qCategory = req.query.category;
