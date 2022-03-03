@@ -12,11 +12,10 @@ const cartRoute = require("./routes/cart");
 const orderRoute = require("./routes/order");
 const productRoute = require("./routes/product");
 
-
 dotenv.config();
 
 
-mongoose.connect(
+mongoose.connect(process.env.MONGODB_URL ||
 process.env.MONGO_URL
 ).then(() => console.log("DBconnection Successful"))
 .catch((err) => {
