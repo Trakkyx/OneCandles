@@ -22,7 +22,7 @@ justify-content:center;
 flex-direction:column;
 @media only screen and (max-width:1000px){
 
-    top:60px;
+    top:40px;
   }
 
 `
