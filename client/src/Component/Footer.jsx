@@ -16,7 +16,11 @@ padding:15px;
 
 const Right = styled.div`
 flex:1;
-padding:15px;
+@media only screen and (max-width:900px){
+    
+    font-size:11px;
+  }
+
 `
 const Logo = styled.h1`
 `

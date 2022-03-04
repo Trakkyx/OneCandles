@@ -68,7 +68,7 @@ height:80%;
 padding:50px;
 @media only screen and (max-width:958px){
 
-    width:50%;
+    width:80%;
   }
 `
 
@@ -117,14 +117,20 @@ const Slider = () => {
     const [slideIndex, setSlideIndex] = useState(0);
 
     const handleClick =(direction) => {
-        if(direction==="left"){
-            setSlideIndex(slideIndex > 0 ? -1 : 3)
+        
+        if(direction==="left" && slideIndex != 0){
+            setSlideIndex(slideIndex-1)
+            console.log(slideIndex);
+          
+         
+        }else if(slideIndex != 2 ){
+            setSlideIndex(slideIndex+1)
+            console.log(slideIndex);
+         
+      
 
-        }else{
-            setSlideIndex(slideIndex < 3 ? slideIndex +1 : 0)
-        }
-
-    };
+    }
+  };
   return (
    <Container>
        <Arrow direction = "left" onClick={()=>handleClick("left")}>

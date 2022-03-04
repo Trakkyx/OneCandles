@@ -44,7 +44,7 @@ color:white;
 background-color:black;
 @media only screen and (max-width:900px){
 
-  width:50px;
+  width:30px;
 }
 `
 const Logo = styled.h1`
@@ -52,7 +52,7 @@ font-weight:bold;
 padding:1%;
 @media only screen and (max-width:900px){
   padding:5%;
-  font-size:20px;
+  font-size:15px;
 }
 
 `
