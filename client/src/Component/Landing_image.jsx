@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import styled from "styled-components";
 const Container= styled.div`
 background-color:#282728;
@@ -21,7 +22,7 @@ justify-content:center;
 flex-direction:column;
 @media only screen and (max-width:1000px){
 
-    top:100px;
+    top:60px;
   }
 
 `
@@ -65,7 +66,9 @@ const Landing_image= () => {
      <Image src="https://media.osmology.co/wp-content/uploads/2017/01/28160832/Smoke-Musk-Scented-Candle-by-Earl-of-East-London191-SQR-768x768.jpg"/>
      <Info>
            <Title>OneCandles bringing you the manliest candles</Title>
+           <Link to = "/products/candle">
            <Button>SHOP HERE</Button>
+           </Link>
         </Info>
    </Container>
   );

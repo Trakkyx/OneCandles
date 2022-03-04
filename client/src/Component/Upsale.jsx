@@ -8,6 +8,10 @@ display:flex;
 align-items:center;
 justify-content:center;
 font-size:20px;
+@media only screen and (max-width:900px){
+    
+  font-size:11px;
+}
 `
 
 const Upsale = () => {
