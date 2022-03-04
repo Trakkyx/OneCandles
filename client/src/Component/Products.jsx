@@ -5,11 +5,30 @@ import axios from "axios"
 import { publicRequest } from '../requestMethods';
 
 const Container = styled.div`
-display: flex;
-flex-wrap:wrap;
-justify-content:space-between;
+display: grid;
 background-color:#282728;
 padding:20px;
+grid-auto-columns: max-content;
+grid-auto-flow: dense;
+grid-auto-rows: minmax(100px, auto);
+grid-gap: 25px;
+grid-template-columns: repeat(4, 1fr);
+@media only screen and (max-width:1000px){
+
+  grid-template-columns: repeat(3, 1fr);
+}
+@media only screen and (max-width:900px){
+
+  grid-template-columns: repeat(2, 1fr);
+}
+
+
+@media only screen and (max-width:800px){
+
+  grid-template-columns: repeat(1, 1fr);
+}
+
+
 `
 
 const Products = ({cat,filters,sort}) => {
@@ -39,6 +58,7 @@ const Products = ({cat,filters,sort}) => {
 
 <Container>
  {products
+ .slice(0.8)
      .map((item) => <Product item={item} key={item.id} />)}
 </Container>
   )
