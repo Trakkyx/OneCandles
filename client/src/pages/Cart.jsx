@@ -20,6 +20,11 @@ height: 60px;
 `
 const Wrapper = styled.div`
 padding:20px;
+@media only screen and (max-width:732px){
+  
+  padding:10px;
+  
+}
 `
 const Title= styled.h1`
 font-weight:300;
@@ -60,6 +65,11 @@ border: 0.5px solid lightgray;
 border-radius:10px;
 padding:10px;
 height:60vh;
+@media only screen and (max-width:732px){
+  
+  padding:5px;
+  
+}
 
 `
 const Product = styled.div`
@@ -119,7 +129,7 @@ font-size:30px;
 font-weight:200;
 @media only screen and (max-width:732px){
   
-   font-size:20px;
+   font-size:15px;
     
   }
 `
@@ -153,7 +163,7 @@ font-size:30px:
 @media only screen and (max-width:732px){
   
 
-    font-size:15px;
+    font-size:5px;
     
   }
 `

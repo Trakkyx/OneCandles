@@ -38,6 +38,11 @@ font-weight:100;
 font-size:40px;
 padding:30px;
 line-height:4;
+@media only screen and (max-width:732px){
+    
+  font-size:20px;
+}
+
 
 `
 const Image = styled.img`
@@ -90,11 +95,20 @@ display:flex;
 align-items:center;
 width:50%;
 justify-content:space-between;
+@media only screen and (max-width:732px){
+    
+  display:block;
+}
 `
 const AmountContainer = styled.div`
 display:flex;
 align-items:center;
 font-weight:700;
+@media only screen and (max-width:732px){
+    
+  display:block;
+}
+
 
 `
 const Amount = styled.span`
@@ -118,7 +132,10 @@ transition:all 0.5s ease;
     background-color: black;
     color:white;
 }
-
+@media only screen and (max-width:732px){
+    
+  font-size:10px;
+}
 `
 
 const FilterSize = styled.select`
@@ -174,6 +191,7 @@ addProduct({...product, quantity, price:product.price * quantity}));
           </ImgContainer>
           <InfoContainer>
               <Title>{product.title}</Title>
+              <hr/>
               <Price>Price: <b>£{product.price}</b></Price>
               <AddContainer>
 
