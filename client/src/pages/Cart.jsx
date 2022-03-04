@@ -75,6 +75,11 @@ height:60vh;
 const Product = styled.div`
 display:flex;
 justify-content:space-between;
+@media only screen and (max-width:732px){
+  font-size:15px;
+  
+}
+
 `
 const ProductDetails = styled.div`
 flex:2;
@@ -84,7 +89,8 @@ const Image = styled.img`
 width:200px;
 @media only screen and (max-width:732px){
   
-    width:100px;
+    width:70px;
+    height:70px;
     
   }
 `
