@@ -145,6 +145,14 @@ display:flex;
 justify-content:space-between;
 font-weight:${props=>props.type === "total" && "500"};
 font-size:${props=>props.type === "total" && "24px"};
+@media only screen and (max-width:732px){
+  
+
+  margin:15px 0px;
+  
+}
+
+
 
 `
 const Button =styled.button`

@@ -95,19 +95,13 @@ display:flex;
 align-items:center;
 width:50%;
 justify-content:space-between;
-@media only screen and (max-width:732px){
-    
-  display:block;
-}
+
 `
 const AmountContainer = styled.div`
 display:flex;
 align-items:center;
 font-weight:700;
-@media only screen and (max-width:732px){
-    
-  display:block;
-}
+
 
 
 `
