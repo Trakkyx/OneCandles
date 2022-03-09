@@ -10,6 +10,8 @@ import StripeCheckout from "react-stripe-checkout"
 import { ClearCart } from '../redux/cartRedux';
 import { Link } from 'react-router-dom';
 import Slider from '../Component/Slider';
+import Products from '../Component/Products';
+import Upsale from '../Component/Upsale';
 
 const KEY = process.env.REACT_APP_STRIPE;
 
@@ -272,7 +274,8 @@ const Cart = () => {
           </Summary>
       </Bottom>
  </Wrapper>
- <Slider/>
+ <Upsale/>
+ <Products cat={"candle"}/>
   <Footer/>
   </Container>
   );

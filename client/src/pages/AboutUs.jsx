@@ -13,8 +13,7 @@ import styled from "styled-components"
 const Info = styled.div`
 text-align:center;
 padding:50px;
-color:#DAA520;
-
+color:black;
 `
 
 

@@ -13,10 +13,12 @@ import {
  } from "react-router-dom";
 import { useSelector } from "react-redux";
 import AboutUs from "./pages/AboutUs";
+import Scrolltotop from "./scrolltotop";
 const App = () => {
   const user =useSelector(state=>state.user.currentUser);
   return (
     <Router>
+      <Scrolltotop>
       <Switch>
        <Route exact path="/">
           <Home/>
@@ -42,6 +44,7 @@ const App = () => {
           <Register/>
           </Route>
       </Switch>
+      </Scrolltotop>
     </Router>
   );
 };

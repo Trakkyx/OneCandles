@@ -11,6 +11,10 @@ const Left = styled.div`
 flex:1;
 flex-direction:column;
 padding:15px;
+@media only screen and (max-width:900px){
+    
+    font-size:11px;
+  }
 `
 
 
@@ -25,7 +29,7 @@ flex:1;
 const Logo = styled.h1`
 `
 const Title=styled.h3`
-margin-bottom:30px;
+margin-bottom:15px;
 `
 const List = styled.ul`
 margin:0;
@@ -75,6 +79,7 @@ const Footer = () => {
   return (
 
     <Container>
+      
      <Left>
          <Logo>OneCandles.</Logo>
          <Desc>
@@ -109,7 +114,6 @@ const Footer = () => {
       <MailOutline style={{marginRight:"10px"}}/>
       Contact@gmail.com
      </ContactItem>
-     <Payment src="https://i.ibb.co/Qfvn4z6/payment.png"/>
      <Title>Useful Links</Title>
      <List>
       <ListItem>Order Tracking</ListItem>

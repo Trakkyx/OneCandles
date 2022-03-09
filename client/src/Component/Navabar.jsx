@@ -49,11 +49,19 @@ background-color:black;
 `
 const Logo = styled.h1`
 font-weight:bold;
-padding:1%;
+padding:5%;
 @media only screen and (max-width:900px){
   padding:5%;
-  font-size:15px;
+  font-size:20px;
 }
+cursor:pointer;
+transition:all 0.5s ease;
+color:white;
+&:hover {
+    color:#DAA520;
+    transform: scale(1.1);
+}
+
 
 `
 
@@ -129,9 +137,12 @@ const Navabar = () => {
          
             <Search style={{color:"gray",fontSize:16}}/>
             <Input/>
-         </SearchContainer>      
+         </SearchContainer> 
+           
        </Left>
+       <Link to ="/" style={{ textDecoration: 'none' }}>
        <Center><Logo>OneCandles.</Logo></Center>
+       </Link>
        <Right>
             <Link to ="/products/candle" style={{ textDecoration: 'none' }} >
            <SubMenuItem>Candles</SubMenuItem>
@@ -149,7 +160,7 @@ const Navabar = () => {
     
            <MenuItem>
            <Link  style={{ textDecoration: 'none' }} to="/cart">
-           <Badge badgeContent={quantity} color="primary"style={{ color: 'blue' }}>
+           <Badge badgeContent={quantity} color="primary"style={{ color: 'gold' }}>
             <ShoppingBasketOutlined/>   
            </Badge>
            </Link>

@@ -14,6 +14,8 @@ import { useDispatch } from "react-redux";
 import Upsale from '../Component/Upsale';
 import Products from '../Component/Products';
 import Slider from '../Component/Slider';
+import { categories } from '../data';
+import SpecifiedUpsale from '../Component/SpecifiedUpsale';
 
 
 const Container = styled.div``
@@ -200,8 +202,8 @@ addProduct({...product, quantity, price:product.price * quantity}));
             
           </InfoContainer>
       </Wrapper>
-      <Upsale/>
-      <Slider/>
+      <SpecifiedUpsale/>
+      <Products cat={product.categories}/>
       <Newsletter/>
       <Footer/>
   </Container>

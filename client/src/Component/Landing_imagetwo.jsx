@@ -2,44 +2,23 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import styled from "styled-components";
 const Container= styled.div`
-background-color:#282728;
-max-width:2000px;
-`
-const Image=styled.img`
-width:100%;
-height:100%;
-object-fit:contain;
-position:relative;
-`
-const Info= styled.div`
-position: absolute;
-width:100%;
-height:100%;
-top:400px;
-left:0;
-display:flex;
-align-items:center;
-justify-content:center;
-flex-direction:column;
-@media only screen and (max-width:1000px){
-
-    top:40px;
-  }
-
-`
-const Title= styled.h1`
-color:white;
-margin-bottom:20px;
-text-align:center;
-font-size:40px;
-display:relative;
+background: url('https://media.osmology.co/wp-content/uploads/2017/01/28160832/Smoke-Musk-Scented-Candle-by-Earl-of-East-London191-SQR-768x768.jpg') 50% no-repeat;
+background-size: cover;
+text-align: center;
+align-items: center;
+justify-content: center;
+display:block;
+height: 800px;
 
 @media only screen and (max-width:800px){
     
-    font-size:20px;
+    height:600px;
   }
 
 `
+
+
+
 const Button= styled.button`
 border:none;
 padding: 10px;
@@ -59,12 +38,34 @@ font-size:40px;
     color:gold;
 }
 `
+const Info= styled.div`
+color:white;
+align-items:center;
+justify-content:center;
+position: absolute;
+width:100%;
+height:100%;
+top:400px;
+left:0;
+`
+const Title= styled.h1`
+color:white;
+margin-bottom:20px;
+
+font-size:40px;
 
 
-const Landing_image= () => {
+@media only screen and (max-width:800px){
+    
+    font-size:20px;
+  }
+
+`
+
+
+const Landing_imagetwo= () => {
   return (
    <Container>
-     <Image src="https://media.osmology.co/wp-content/uploads/2017/01/28160832/Smoke-Musk-Scented-Candle-by-Earl-of-East-London191-SQR-768x768.jpg"/>
      <Info>
            <Title>OneCandles bringing you the manliest candles</Title>
            <Link to = "/products/candle">
@@ -75,4 +76,4 @@ const Landing_image= () => {
   );
 };
 
-export default Landing_image;
+export default Landing_imagetwo;

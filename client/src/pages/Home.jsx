@@ -8,6 +8,7 @@ import Newsletter from '../Component/Newsletter';
 import Footer from '../Component/Footer';
 import Upsale from '../Component/Upsale';
 import Landing_image from '../Component/Landing_image';
+import Landing_imagetwo from '../Component/Landing_imagetwo';
 
 
 
@@ -20,7 +21,7 @@ const Home = () => {
   <div>
   <Annoncement/>
   <Navabar/>
-  <Landing_image/>
+  <Landing_imagetwo/>
   <Categories/>
   <Upsale/>
   <Products/>
