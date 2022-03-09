@@ -36,6 +36,10 @@ font-weight:600;
 const Title= styled.h1`
 color:white;
 margin-bottom:20px;
+ @media only screen and (max-width:420px){
+    
+    font-size:20px;
+  }
 `
 
 const CategoryItem = ({item}) => {

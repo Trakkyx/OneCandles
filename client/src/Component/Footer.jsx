@@ -15,6 +15,12 @@ padding:15px;
     
     font-size:11px;
   }
+ @media only screen and (max-width:420px){
+    
+    display:none;
+  }
+ 
+
 `
 
 

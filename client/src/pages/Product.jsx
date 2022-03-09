@@ -42,7 +42,8 @@ padding:30px;
 line-height:4;
 @media only screen and (max-width:732px){
     
-  font-size:20px;
+  font-size:15px;
+  padding:15px
 }
 
 
@@ -63,6 +64,11 @@ object-fit:contain;
 const Desc = styled.p`
 margin:20px 0px;
 padding:30px;
+@media only screen and (max-width:732px){
+    
+    font-size:15px;
+    padding:5px;
+  }
 
 `
 const Title = styled.h1`

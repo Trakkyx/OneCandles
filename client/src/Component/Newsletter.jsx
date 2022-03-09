@@ -20,6 +20,10 @@ padding-left:20px;
 const Title = styled.h1`
 font-size:70px;
 margin-bottom:20px;
+ @media only screen and (max-width:365px){
+    
+    font-size:40px;
+  }
 `
 const Desc = styled.p`
 font-size:24px;

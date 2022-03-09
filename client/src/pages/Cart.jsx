@@ -56,9 +56,18 @@ margin:0px 10px;
 const Bottom= styled.div`
 display: flex;
 justify-content: space-between;
+@media only screen and (max-width:400px){
+  
+  display:block;
+  
+  
+}
+
+
 `
 const Info= styled.div`
 flex:3;
+
 
 `
 const Summary= styled.div`
@@ -71,7 +80,19 @@ height:60vh;
   
   padding:5px;
   
+  
 }
+@media only screen and (max-width:400px){
+  
+  display:block;
+  
+  
+  
+  
+  
+}
+
+
 
 `
 const Product = styled.div`

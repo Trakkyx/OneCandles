@@ -33,6 +33,7 @@ flex:1;
 display:flex;
 align-items:center;
 justify-content:space-between;
+margin-right:5%;
 `
 const Center = styled.div`
 flex:1;
@@ -49,9 +50,9 @@ background-color:black;
 `
 const Logo = styled.h1`
 font-weight:bold;
-padding:5%;
+padding:3%;
 @media only screen and (max-width:900px){
-  padding:5%;
+  padding:1%;
   font-size:20px;
 }
 cursor:pointer;
@@ -75,6 +76,28 @@ cursor:pointer;
 &:hover {
     color:#DAA520;
     transform: scale(1.1);
+}
+@media only screen and (max-width:430px){
+
+  font-size:10px;
+  margin-left:20px;
+}
+
+`
+const HMenuItem = styled.div`
+font-size:14px;
+margin-left: 25px;
+font-weight:600;
+color:white;
+transition:all 0.5s ease;
+cursor:pointer;
+&:hover {
+    color:#DAA520;
+    transform: scale(1.1);
+}
+@media only screen and (max-width:430px){
+
+  font-size:10px;
 }
 
 `
@@ -109,6 +132,12 @@ display:flex;
 align-items:center;
 margin-left:25px;
 padding:5px;
+visibility:hidden;
+@media only screen and (max-width:430px){
+
+  display:none;
+}
+
 `
 
 const Navabar = () => {
@@ -127,7 +156,7 @@ const Navabar = () => {
        <Left>
         <Language>EN</Language>
         <Link to ="/" style={{ textDecoration: 'none' }} >
-           <MenuItem>Home</MenuItem>
+           <HMenuItem>Home</HMenuItem>
            </Link>
            <Link to="/AboutUs" style={{ textDecoration: 'none' }}>
            <MenuItem>About Us</MenuItem>
@@ -159,7 +188,7 @@ const Navabar = () => {
             
     
            <MenuItem>
-           <Link  style={{ textDecoration: 'none' }} to="/cart">
+           <Link  style={{ textDecoration: 'none', right: "10px" }} to="/cart">
            <Badge badgeContent={quantity} color="primary"style={{ color: 'gold' }}>
             <ShoppingBasketOutlined/>   
            </Badge>
