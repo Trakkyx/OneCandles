@@ -6,6 +6,10 @@ const Container = styled.div`
 display:flex;
 background-color:#282728;
 color:white;
+ @media only screen and (max-width:420px){
+    
+    display:block;
+  }
 `
 const Left = styled.div`
 flex:1;
@@ -15,10 +19,7 @@ padding:15px;
     
     font-size:11px;
   }
- @media only screen and (max-width:420px){
-    
-    display:none;
-  }
+
  
 
 `
